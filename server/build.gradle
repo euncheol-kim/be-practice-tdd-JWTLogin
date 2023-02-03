@@ -27,12 +27,20 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    // h2 database
+    testImplementation 'com.h2database:h2'
+    runtimeOnly 'com.h2database:h2'
+
     // gson library :: 직렬화 역직렬화에 사용
     implementation 'com.google.code.gson:gson'
 
     // Mapper libray
     implementation 'org.mapstruct:mapstruct:1.5.1.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.1.Final'
+
+    // Spring Security :: 시큐리티 프레임워크 설정
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
 }
 
 tasks.named('test') {

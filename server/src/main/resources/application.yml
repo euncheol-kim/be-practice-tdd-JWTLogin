@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true # h2 console ??
+      path: /h2 # h2 ?? ??
+  datasource:
+    url: jdbc:h2:mem:test # JDBC ??? URL
+    driver-class-name: org.h2.Driver # Driver ??
+  jpa:
+    hibernate:
+      ddl-auto: create  # ??? ?? ??
+    show-sql: true      # SQL ?? ??
+    properties:
+      hibernate:
+        format_sql: true  # SQL pretty print
